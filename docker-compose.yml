@@ -23,7 +23,7 @@ services:
           - .docker/php/apache2/apache2.conf:/etc/apache2/apache2.conf
           - .docker/logs:/var/log/apache2/
         ports:
-          - "80:80"
+          - "8080:80"
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:4.7.5-1
         container_name: wesic-phpmyadmin
